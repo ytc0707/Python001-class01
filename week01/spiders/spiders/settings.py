@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'maoyanmovie'
+BOT_NAME = 'spiders'
 
-SPIDER_MODULES = ['maoyanmovie.spiders']
-NEWSPIDER_MODULE = 'maoyanmovie.spiders'
+SPIDER_MODULES = ['spiders.spiders']
+NEWSPIDER_MODULE = 'spiders.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -79,7 +79,7 @@ DOWNLOAD_DELAY = 1
 #    'spiders.pipelines.SpidersPipeline': 300,
 #}
 ITEM_PIPELINES = {
-    'maoyanmovie.pipelines.MaoyanmoviePipeline': 300,
+    'spiders.pipelines.MaoyanmoviePipeline': 300,
 }
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
